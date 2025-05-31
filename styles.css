@@ -1,0 +1,108 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0 1.5rem;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #fff;
+    padding: 1.rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header-container h1 {
+    font-size: 2rem;
+    color: #222;
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+    display: flex;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
+
+/* Sections */
+main section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #0077cc;
+    padding-left: 0.75rem;
+}
+
+section h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #222;
+}
+
+section p {
+    margin: 0.5rem 0;
+}
+
+ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+#about img {
+    width: 150px;
+    height: auto; /* Maintains aspect ratio */
+    aspect-ratio: 1 / 1; /* Forces square shape */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0077cc;
+    display: block;
+    margin: 1rem auto;
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+}
