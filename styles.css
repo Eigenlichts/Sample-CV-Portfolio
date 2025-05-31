@@ -16,27 +16,33 @@ body {
 /* Navigation Bar */
 header {
     background-color: #fff;
-    padding: 1.rem 0;
+    padding: 1rem 0;
     border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 1.5rem;
 }
 
-.header-container h1 {
+.header-container .logo {
     font-size: 2rem;
     color: #222;
-    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
 nav {
-    text-align: right;
     display: flex;
     gap: 1rem;
     font-weight: 500;
